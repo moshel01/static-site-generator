@@ -209,3 +209,9 @@ __marimo__/
 # Test
 test.sh
 src/test_*
+
+#generated
+public/
+
+#uploaded
+static/

@@ -9,11 +9,8 @@ class BlockType(Enum):
     ORDERED_LIST = 'ordered_list'
 
 def block_to_block_type(block):
-    if len(block) <=2:
-        if block[0:2] == '# ':
-            return BlockType.HEADING
-        else:
-            return BlockType.PARAGRAPH
+    if len(block) <=1:
+        return BlockType.PARAGRAPH
     stripped = block.strip()
     line_split = block.split('\n')
     if block[0] == '#':
