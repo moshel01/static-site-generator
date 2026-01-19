@@ -28,7 +28,7 @@ def block_to_block_type(block):
     ul = 0
     ol = 0
     for i in range(len(line_split)):
-        if line_split[i][0:2] == '> ':
+        if line_split[i].startswith('>'):
             quote += 1
             continue
         elif line_split[i][0:2] == '- ':
