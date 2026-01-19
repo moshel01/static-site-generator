@@ -211,7 +211,7 @@ test.sh
 src/test_*
 
 #generated
-public/
+
 
 #uploaded
 static/
